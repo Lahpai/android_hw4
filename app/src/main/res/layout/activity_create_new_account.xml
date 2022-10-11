@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/createAcc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Create your account"
+        android:gravity="center"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="265dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/walmar1" />
+
+    <TextView
+        android:id="@+id/rField"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="36dp"
+        android:text="*required field"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvfn"
+        app:layout_constraintTop_toBottomOf="@+id/createAcc" />
+
+    <TextView
+        android:id="@+id/tvfn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:text="First name*"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rField" />
+
+    <EditText
+        android:id="@+id/editTextfname"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/tvfn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvfn"
+        app:layout_constraintTop_toBottomOf="@+id/tvfn" />
+
+    <EditText
+        android:id="@+id/editTextlname"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/editTextfname"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvln"
+        app:layout_constraintTop_toBottomOf="@+id/tvln" />
+
+    <TextView
+        android:id="@+id/tvln"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="50dp"
+        android:text="Last name*"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextfname" />
+
+    <TextView
+        android:id="@+id/tvemail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="50dp"
+        android:text="Email address*"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextlname" />
+
+    <EditText
+        android:id="@+id/editTextemail"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/editTextlname"
+        app:layout_constraintStart_toStartOf="@+id/tvemail"
+        app:layout_constraintTop_toBottomOf="@+id/tvemail" />
+
+    <TextView
+        android:id="@+id/tvpassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="50dp"
+        android:text="Password*"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextemail" />
+
+    <EditText
+        android:id="@+id/editTextpassword"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/editTextemail"
+        app:layout_constraintStart_toStartOf="@+id/tvpassword"
+        app:layout_constraintTop_toBottomOf="@+id/tvpassword" />
+
+    <Button
+        android:id="@+id/btnacc"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="45dp"
+        android:text="Create Account"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextpassword"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@+id/editTextpassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextpassword" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

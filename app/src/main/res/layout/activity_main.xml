@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imgwalmart"
+        android:layout_width="150dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="-30dp"
+        app:srcCompat="@drawable/walmar1" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/tsignin"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Sign in to your account"
+        android:textSize="20sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/vemail"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Email address (required)" />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/vpw"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Password (required)" />
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/forgetPw"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Forget Password?"
+        android:gravity="right"
+        android:autoLink="all"
+        android:clickable="true"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="Sign in "
+        android:backgroundTint="#1E90FF"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:id="@+id/acc"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Don't have an account?"
+        android:textSize="15dp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/newAcc"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="Create a new account"
+        android:backgroundTint="@color/white"
+        android:textColor="#1E90FF"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
