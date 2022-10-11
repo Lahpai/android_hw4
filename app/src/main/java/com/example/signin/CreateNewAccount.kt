@@ -12,24 +12,11 @@ class CreateNewAccount : AppCompatActivity() {
         setContentView(R.layout.activity_create_new_account)
 
         btnacc.setOnClickListener {
-            var fn = editTextfname.text.toString().trim()
-            var ln = editTextlname.text.toString().trim()
-            var email = editTextemail.text.toString().trim()
-            var pw = editTextpassword.text.toString().trim()
+            var fn = editTextfname.text.toString()
+            var ln = editTextlname.text.toString()
+            var email = editTextemail.text.toString()
+            var pw = editTextpassword.text.toString()
 
-            if (fn.isEmpty() || ln.isEmpty() || email.isEmpty() || pw.isEmpty()) {
-                if (fn.isEmpty())
-                    editTextfname.error = "Please Enter First Name "
-
-                if (ln.isEmpty())
-                    editTextlname.error = "Please Enter Last Name"
-
-                if(email.isEmpty())
-                    editTextemail.error = "Please Enter Email"
-
-                if(email.isEmpty())
-                    editTextpassword.error = "Please Enter Password"
-            } else {
                 var user = User (fn,ln,email,pw)
                 intent.putExtra("user", user)
 
@@ -37,12 +24,12 @@ class CreateNewAccount : AppCompatActivity() {
                 finish()
             }
         }
-    }
 
     override fun onBackPressed() {
         super.onBackPressed()
         setResult(Activity.RESULT_CANCELED)
         finish()
     }
-
 }
+
+
